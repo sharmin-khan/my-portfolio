@@ -144,7 +144,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="w-full fixed top-0 z-50 bg-white bg-opacity-30 dark:bg-gray-900 dark:opacity-95 backdrop-blur-md ">
+    <div className="w-full fixed top-0 z-50 bg-white bg-opacity-30 dark:bg-gray-800 dark:opacity-95 backdrop-blur-md ">
        <div className=" navbar w-11/12 mx-auto relative px-0">
       {/* Left side */}
       <div className="navbar-start">
