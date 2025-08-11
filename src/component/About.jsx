@@ -32,7 +32,7 @@ const AboutMe = () => {
   }, []);
 
   return (
-    <section ref={containerRef} className="pt-20">
+    <section id="about" ref={containerRef} className="pt-20">
       {/* Title full width */}
       <div className="flex items-center justify-center mb-16">
         <h2 className="text-4xl font-extrabold text-green-500 tracking-wide border-b-4 border-green-600 pb-2 max-w-max">
@@ -44,7 +44,7 @@ const AboutMe = () => {
       <div className="flex flex-col lg:flex-row gap-12">
         {/* Left: About Me text */}
         <div className="lg:w-1/2 text-lg font-sans leading-relaxed">
-        <h2 className="text-xl font-semibold text-green-500 mb-6">Programming Journey</h2>
+        <h2 className="text-xl font-semibold text-green-600 mb-6">Programming Journey</h2>
           <p className="mb-4">
             I started my programming journey with a curiosity to understand how
             websites and apps are built. Over time, I have developed strong
@@ -69,7 +69,7 @@ const AboutMe = () => {
 
         {/* Right: Skills */}
         <div className="lg:w-1/2">
-          <h3 className="text-xl font-semibold mb-6 text-green-500">
+          <h3 className="text-xl font-semibold mb-6 text-green-600">
             My Strengths
           </h3>
           <div className="space-y-6">
@@ -83,9 +83,9 @@ const AboutMe = () => {
                     {percentage}%
                   </span>
                 </div>
-                <div className="w-full bg-gray-300 dark:bg-gray-700 rounded-full h-5">
+                <div className="w-full bg-gray-300 dark:bg-gray-700 rounded-full h-3">
                   <div
-                    className="bg-green-500 h-5 rounded-full transition-all duration-1000 ease-in-out"
+                    className="bg-green-500 h-3 rounded-full transition-all duration-1000 ease-in-out"
                     style={{
                       width: visible ? `${percentage}%` : "0%",
                     }}

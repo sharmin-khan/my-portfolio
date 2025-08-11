@@ -7,141 +7,93 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const NavItems = (
-    <>
-      <li>
-        <NavLink
-          to="/"
-          onClick={() => setIsOpen(false)}
-          className={({ isActive }) =>
-            `relative px-4 py-2 transition-transform duration-200 text-base font-medium
-            ${
-              isActive
-                ? "text-green-500"
-                : "text-gray-700 dark:text-gray-200"
-            }
-            hover:-translate-y-1 hover:underline underline-offset-4 hover:text-green-500 bg-transparent`
-          }
-          style={{ textDecorationThickness: "2px" }}
-        >
-          Home
-        </NavLink>
-      </li>
+  <>
+    <li>
+      <a
+        href="#home"
+        onClick={() => setIsOpen(false)}
+        className="relative px-4 py-2 transition-transform duration-200 text-base font-medium
+          text-gray-700 dark:text-gray-200 hover:-translate-y-1 hover:underline underline-offset-4 hover:text-green-500 bg-transparent"
+        style={{ textDecorationThickness: "2px" }}
+      >
+        Home
+      </a>
+    </li>
 
-      <li>
-        <NavLink
-          to="/about"
-          onClick={() => setIsOpen(false)}
-          className={({ isActive }) =>
-            `relative px-4 py-2 transition-transform duration-200 text-base font-medium
-            ${
-              isActive
-                ? "text-green-500"
-                : "text-gray-700 dark:text-gray-200"
-            }
-            hover:-translate-y-1 hover:underline underline-offset-4 hover:text-green-500 bg-transparent`
-          }
-          style={{ textDecorationThickness: "2px" }}
-        >
-          About
-        </NavLink>
-      </li>
+    <li>
+      <a
+        href="#about"
+        onClick={() => setIsOpen(false)}
+        className="relative px-4 py-2 transition-transform duration-200 text-base font-medium
+          text-gray-700 dark:text-gray-200 hover:-translate-y-1 hover:underline underline-offset-4 hover:text-green-500 bg-transparent"
+        style={{ textDecorationThickness: "2px" }}
+      >
+        About
+      </a>
+    </li>
 
-      <li>
-        <NavLink
-          to="/skills"
-          onClick={() => setIsOpen(false)}
-          className={({ isActive }) =>
-            `relative px-4 py-2 transition-transform duration-200 text-base font-medium
-            ${
-              isActive
-                ? "text-green-500"
-                : "text-gray-700 dark:text-gray-200"
-            }
-            hover:-translate-y-1 hover:underline underline-offset-4 hover:text-green-500 bg-transparent`
-          }
-          style={{ textDecorationThickness: "2px" }}
-        >
-          Skills
-        </NavLink>
-      </li>
+    <li>
+      <a
+        href="#skills"
+        onClick={() => setIsOpen(false)}
+        className="relative px-4 py-2 transition-transform duration-200 text-base font-medium
+          text-gray-700 dark:text-gray-200 hover:-translate-y-1 hover:underline underline-offset-4 hover:text-green-500 bg-transparent"
+        style={{ textDecorationThickness: "2px" }}
+      >
+        Skills
+      </a>
+    </li>
 
-      <li>
-        <NavLink
-          to="/projects"
-          onClick={() => setIsOpen(false)}
-          className={({ isActive }) =>
-            `relative px-4 py-2 transition-transform duration-200 text-base font-medium
-            ${
-              isActive
-                ? "text-green-500"
-                : "text-gray-700 dark:text-gray-200"
-            }
-            hover:-translate-y-1 hover:underline underline-offset-4 hover:text-green-500 bg-transparent`
-          }
-          style={{ textDecorationThickness: "2px" }}
-        >
-          Projects
-        </NavLink>
-      </li>
+    <li>
+      <a
+        href="#projects"
+        onClick={() => setIsOpen(false)}
+        className="relative px-4 py-2 transition-transform duration-200 text-base font-medium
+          text-gray-700 dark:text-gray-200 hover:-translate-y-1 hover:underline underline-offset-4 hover:text-green-500 bg-transparent"
+        style={{ textDecorationThickness: "2px" }}
+      >
+        Projects
+      </a>
+    </li>
 
-      <li>
-        <NavLink
-          to="/services"
-          onClick={() => setIsOpen(false)}
-          className={({ isActive }) =>
-            `relative px-4 py-2 transition-transform duration-200 text-base font-medium
-            ${
-              isActive
-                ? "text-green-500"
-                : "text-gray-700 dark:text-gray-200"
-            }
-            hover:-translate-y-1 hover:underline underline-offset-4 hover:text-green-500 bg-transparent`
-          }
-          style={{ textDecorationThickness: "2px" }}
-        >
-          Services
-        </NavLink>
-      </li>
+    <li>
+      <a
+        href="#services"
+        onClick={() => setIsOpen(false)}
+        className="relative px-4 py-2 transition-transform duration-200 text-base font-medium
+          text-gray-700 dark:text-gray-200 hover:-translate-y-1 hover:underline underline-offset-4 hover:text-green-500 bg-transparent"
+        style={{ textDecorationThickness: "2px" }}
+      >
+        Services
+      </a>
+    </li>
 
-      <li>
-        <NavLink
-          to="/testimonials"
-          onClick={() => setIsOpen(false)}
-          className={({ isActive }) =>
-            `relative px-4 py-2 transition-transform duration-200 text-base font-medium
-            ${
-              isActive
-                ? "text-green-500"
-                : "text-gray-700 dark:text-gray-200"
-            }
-            hover:-translate-y-1 hover:underline underline-offset-4 hover:text-green-500 bg-transparent`
-          }
-          style={{ textDecorationThickness: "2px" }}
-        >
-          Testimonials
-        </NavLink>
-      </li>
+    <li>
+      <a
+        href="#testimonials"
+        onClick={() => setIsOpen(false)}
+        className="relative px-4 py-2 transition-transform duration-200 text-base font-medium
+          text-gray-700 dark:text-gray-200 hover:-translate-y-1 hover:underline underline-offset-4 hover:text-green-500 bg-transparent"
+        style={{ textDecorationThickness: "2px" }}
+      >
+        Testimonials
+      </a>
+    </li>
 
-      <li>
-        <NavLink
-          to="/contact"
-          onClick={() => setIsOpen(false)}
-          className={({ isActive }) =>
-            `relative px-4 py-2 transition-transform duration-200 text-base font-medium
-            ${
-              isActive
-                ? "text-green-500"
-                : "text-gray-700 dark:text-gray-200"
-            }
-            hover:-translate-y-1 hover:underline underline-offset-4 hover:text-green-500 bg-transparent`
-          }
-          style={{ textDecorationThickness: "2px" }}
-        >
-          Contact
-        </NavLink>
-      </li>
-    </>
-  );
+    <li>
+      <a
+        href="#contact"
+        onClick={() => setIsOpen(false)}
+        className="relative px-4 py-2 transition-transform duration-200 text-base font-medium
+          text-gray-700 dark:text-gray-200 hover:-translate-y-1 hover:underline underline-offset-4 hover:text-green-500 bg-transparent"
+        style={{ textDecorationThickness: "2px" }}
+      >
+        Contact
+      </a>
+    </li>
+  </>
+);
+
 
   return (
     <div className="w-full fixed top-0 z-50 bg-white bg-opacity-30 dark:bg-gray-800 dark:opacity-95 backdrop-blur-md ">
