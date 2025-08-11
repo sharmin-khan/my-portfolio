@@ -9,17 +9,23 @@ import {
   FaTools,
   FaServer,
   FaLaptopCode,
+  FaHtml5,
+  FaCss3Alt,
+  FaBootstrap,
 } from "react-icons/fa";
 
 const skillsData = {
   frontend: [
-    { name: "React", percentage: 85, icon: <FaReact className="text-blue-500" /> },
+    { name: "HTML5", percentage: 95, icon: <FaHtml5 className="text-orange-500" /> },
+    { name: "CSS3", percentage: 90, icon: <FaCss3Alt className="text-blue-500" /> },
     { name: "JavaScript", percentage: 90, icon: <FaJs className="text-yellow-400" /> },
+    { name: "React", percentage: 85, icon: <FaReact className="text-blue-400" /> },
     { name: "Tailwind CSS", percentage: 80, icon: <FaLaptopCode className="text-teal-400" /> },
+   
   ],
   backend: [
     { name: "Node.js", percentage: 65, icon: <FaNodeJs className="text-green-600" /> },
-    { name: "Express", percentage: 60, icon: <FaServer className="text-gray-600" /> },
+    { name: "Express", percentage: 60, icon: <FaServer className="text-gray-400" /> },
     { name: "MongoDB", percentage: 70, icon: <FaDatabase className="text-green-700" /> },
   ],
   tools: [
@@ -105,6 +111,20 @@ const Skills = () => {
           animate={animate}
         />
       </div>
+    <div className="mt-8 flex flex-col items-center">
+  <h3 className="text-2xl font-semibold mb-6">Additional Skills</h3>
+  <div className="flex flex-wrap gap-2">
+    <span className="px-3 py-2 bg-green-100 dark:bg-gray-700 dark:text-green-500 rounded-full text-md font-medium">DaisyUI</span>
+    <span className="px-3 py-2 bg-green-100 dark:bg-gray-700 dark:text-green-500 rounded-full text-md font-medium">Mamba UI</span>
+    <span className="px-3 py-2 bg-green-100 dark:bg-gray-700 dark:text-green-500 rounded-full text-md font-medium">Figma</span>
+    <span className="px-3 py-2 bg-green-100 dark:bg-gray-700 dark:text-green-500 rounded-full text-md font-medium">Pixso</span>
+    <span className="px-3 py-2 bg-green-100 dark:bg-gray-700 dark:text-green-500 rounded-full text-md font-medium">Stripe</span>
+    <span className="px-3 py-2 bg-green-100 dark:bg-gray-700 dark:text-green-500 rounded-full text-md font-medium">Imgbb</span>
+    <span className="px-3 py-2 bg-green-100 dark:bg-gray-700 dark:text-green-500 rounded-full text-md font-medium">Canva</span>
+    <span className="px-3 py-2 bg-green-100 dark:bg-gray-700 dark:text-green-500 rounded-full text-md font-medium">REST API Integration</span>
+    <span className="px-3 py-2 bg-green-100 dark:bg-gray-700 dark:text-green-500 rounded-full text-md font-medium">Firebase Hosting / Authentication</span>
+  </div>
+</div>
     </section>
   );
 };
