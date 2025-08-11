@@ -144,7 +144,8 @@ const Navbar = () => {
   );
 
   return (
-    <div className="navbar w-11/12 mx-auto relative">
+    <div className="w-full fixed top-0 z-50 bg-white bg-opacity-30 dark:bg-gray-900 dark:opacity-95 backdrop-blur-md ">
+       <div className=" navbar w-11/12 mx-auto relative px-0">
       {/* Left side */}
       <div className="navbar-start">
         <Link to="/" className="text-2xl font-bold text-green-500">
@@ -184,11 +185,17 @@ const Navbar = () => {
 
         {/* Resume button */}
         <div className="hidden lg:block">
-          <button className="px-4 py-2 bg-green-500 text-white font-semibold text-md rounded-md cursor-pointer flex items-center gap-2">
-            <HiOutlineDownload className="text-lg" />
-            Resume
-          </button>
-        </div>
+  <a
+    href="/Resume.pdf"
+    download
+    target="_blank"
+    rel="noopener noreferrer"
+    className="px-4 py-2 bg-green-500 text-white font-semibold text-md rounded-md cursor-pointer flex items-center gap-2"
+  >
+    <HiOutlineDownload className="text-lg" />
+    Resume
+  </a>
+</div>
       </div>
 
       {/* Mobile Sidebar */}
@@ -235,6 +242,7 @@ const Navbar = () => {
           className="fixed inset-0 bg-black bg-opacity-30 z-40"
         />
       )}
+    </div>
     </div>
   );
 };
