@@ -14,7 +14,7 @@ const Footer = () => {
         <nav>
           <h6 className="text-2xl font-bold text-green-500 mb-4">Sarmin.</h6>
           <p className="dark:text-gray-200 max-w-xs">
-            I am a passionate Frontend Developer focused on building responsive
+            I am a passionate <span className="text-green-500">Frontend Developer</span> focused on building responsive
             and user-friendly web applications. Dedicated to writing clean and
             efficient code with modern technologies.
           </p>

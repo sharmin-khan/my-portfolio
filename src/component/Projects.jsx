@@ -38,7 +38,7 @@ const projects = [
 const Project = () => {
   return (
     <div id="projects" className="pt-20 mb-10">
-      <h2 className="text-4xl font-extrabold text-green-500 tracking-wide border-b-4 border-green-600 pb-2 max-w-max mx-auto mb-8">
+      <h2 className="text-3xl font-bold text-green-500 tracking-wide border-b-4 border-green-600 pb-2 max-w-max mx-auto mb-8">
         My Projects
       </h2>
 

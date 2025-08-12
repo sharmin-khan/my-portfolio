@@ -11,7 +11,6 @@ const NavItems = ({ activeSection, setIsOpen, isMobile = false }) => (
       { id: "skills", label: "Skills" },
       { id: "projects", label: "Projects" },
       { id: "services", label: "Services" },
-      { id: "testimonials", label: "Testimonials" },
       { id: "contact", label: "Contact" },
     ].map(({ id, label }) => (
       <li key={id}>
@@ -49,7 +48,6 @@ const Navbar = () => {
         "skills",
         "projects",
         "services",
-        "testimonials",
         "contact",
       ];
 

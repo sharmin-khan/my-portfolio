@@ -87,7 +87,7 @@ const Skills = () => {
 
   return (
     <section id="skills" ref={containerRef} className="pt-20">
-      <h2 className="text-4xl font-extrabold text-green-500 mb-16 text-center border-b-4 border-green-600 pb-2 max-w-max mx-auto">
+      <h2 className="text-3xl font-bold text-green-500 mb-16 text-center border-b-4 border-green-600 pb-2 max-w-max mx-auto">
         My Skills
       </h2>
 

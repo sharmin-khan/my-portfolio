@@ -35,7 +35,7 @@ const AboutMe = () => {
     <section id="about" ref={containerRef} className="pt-20">
       {/* Title full width */}
       <div className="flex items-center justify-center mb-16">
-        <h2 className="text-4xl font-extrabold text-green-500 tracking-wide border-b-4 border-green-600 pb-2 max-w-max">
+        <h2 className="text-3xl font-bold text-green-500 tracking-wide border-b-4 border-green-600 pb-2 max-w-max">
           About Me
         </h2>
       </div>
