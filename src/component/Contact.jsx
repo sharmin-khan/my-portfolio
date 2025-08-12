@@ -12,7 +12,7 @@ const Contact = () => {
       className="max-w-3xl mx-auto p-6 rounded-lg bg-white dark:bg-gray-800 shadow-md my-20"
     >
         
-      <h2 className="text-3xl font-bold text-green-600 mb-4 text-center">
+      <h2 className="text-3xl font-bold text-green-500 mb-4 text-center">
         Get In Touch
       </h2>
       <p className="text-gray-700 dark:text-gray-300 mb-6 text-center">

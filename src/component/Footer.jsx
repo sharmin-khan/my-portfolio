@@ -9,7 +9,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="dark:bg-gray-800 text-gary-200 py-10 sm:px-20">
+    <footer className="dark:bg-gray-800 text-gary-200 py-10 w-11/12 mx-auto ">
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
         <nav>
           <h6 className="text-2xl font-bold text-green-500 mb-4">Sarmin.</h6>
