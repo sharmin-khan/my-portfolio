@@ -36,7 +36,7 @@ const skillsData = {
 };
 
 const SkillCategory = ({ title, icon, skills, animate }) => (
-  <div className="w-full p-6 bg-gray-800 bg-opacity-70 rounded-lg shadow-md">
+  <div className="w-full p-6 dark:bg-gray-800 bg-opacity-70 border-1 border-green-300 dark:border-green-00  rounded-lg shadow-md">
     <h3 className="flex items-center gap-2 text-xl font-semibold mb-6 text-green-400">
       {icon}
       {title}
@@ -45,13 +45,13 @@ const SkillCategory = ({ title, icon, skills, animate }) => (
       {skills.map(({ name, percentage, icon }) => (
         <div key={name}>
           <div className="flex justify-between mb-2 items-center gap-2">
-            <span className="flex items-center gap-2 font-medium text-gray-200">
+            <span className="flex items-center gap-2 font-medium text-gray-800 dark:text-gray-200">
               {icon}
               {name}
             </span>
-            <span className="font-medium text-gray-200">{percentage}%</span>
+            <span className="font-medium">{percentage}%</span>
           </div>
-          <div className="w-full bg-gray-700 rounded-full h-3">
+          <div className="w-full bg-gray-300 dark:bg-gray-700 rounded-full h-3">
             <div
               className="bg-green-500 h-3 rounded-full transition-all duration-1000 ease-in-out"
               style={{ width: animate ? `${percentage}%` : "0%" }}

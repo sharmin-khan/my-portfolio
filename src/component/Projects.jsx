@@ -1,0 +1,92 @@
+import React from "react";
+import { Link } from "react-router";
+
+import project1Img from "../assets/project1.png"
+import project2Img from "../assets/project2.png";
+import project3Img from "../assets/project3.png";
+
+const projects = [
+  {
+    id: 1,
+    name: "MarathonPro",
+    image: project1Img,
+    description: "A platform to manage and track marathons with live updates.",
+    tech: ["React", "Node.js", "MongoDB", "Express"],
+    liveLink: "https://marathon-management-syst-3a566.web.app",
+  },
+  {
+    id: 2,
+    name: "PropEasy",
+    image: project2Img,
+    description: "Real estate marketplace to buy and sell properties easily.",
+    tech: ["React", "Firebase", "Tailwind CSS"],
+
+    liveLink: "https://real-estate-platform-4dacc.web.app",
+  },
+  {
+    id: 3,
+    name: "TaskNest",
+    image: project3Img,
+    description:
+      "Freelance task marketplace connecting clients and freelancers.",
+    tech: ["React", "Node.js", "MongoDB"],
+
+    liveLink: "https://freelance-task-marketpla-73040.web.app/",
+  },
+];
+
+const Project = () => {
+  return (
+    <div id="projects" className="pt-20 mb-10">
+      <h2 className="text-4xl font-extrabold text-green-500 tracking-wide border-b-4 border-green-600 pb-2 max-w-max mx-auto mb-8">
+        My Projects
+      </h2>
+
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {projects.map(({ id, name, image, description, tech, liveLink }) => (
+          <div key={id} className="rounded-lg shadow-lg p-4 relative  border border-green-800/50">
+            <img
+              src={image}
+              alt={name}
+              className="rounded-md mb-4 h-64 w-full object-cover transition-transform duration-300 hover:scale-105"
+            />
+            <h3 className="text-lg text-green-600 font-semibold mb-2">
+              {name}
+            </h3>
+            <h4 className="text-md mb-4 text-gray-400">{description}</h4>
+            <p className="text-md mb-4">
+              <span className="font-semibold text-green-600 mr-2">Tech:</span>
+              {tech.map((item, index) => (
+                <span
+                  key={index}
+                  className="inline-block bg-green-600/70 text-white text-xs px-2 py-1 rounded-md mr-2"
+                >
+                  {item}
+                </span>
+              ))}
+            </p>
+
+            <div className="flex gap-3">
+              <Link
+                to={`/projects/${id}`}
+                className="bg-green-500 text-white px-4 py-2 rounded font-semibold hover:bg-green-600 text-md"
+              >
+                View Details
+              </Link>
+              <a
+                href={liveLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="border border-green-500 bg-transparent text-green-500 hover:text-gray-200 px-4 py-2 rounded font-semibold hover:bg-green-600 text-md transition-colors duration-300"
+              >
+                Live Demo
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default Project;

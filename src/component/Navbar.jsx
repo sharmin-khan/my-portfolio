@@ -79,7 +79,7 @@ const Navbar = () => {
         {/* Left side */}
         <div className="navbar-start">
           <Link to="/" className="text-2xl font-bold text-green-500">
-            Sarmin
+            Sarmin.
           </Link>
         </div>
 
@@ -126,7 +126,7 @@ const Navbar = () => {
               download
               target="_blank"
               rel="noopener noreferrer"
-              className="px-4 py-2 bg-green-500 text-white font-semibold text-md rounded-md cursor-pointer flex items-center gap-2"
+              className="px-4 py-2 bg-green-500 hover:bg-green-600 text-white font-semibold text-md rounded-md cursor-pointer flex items-center gap-2"
             >
               <HiOutlineDownload className="text-lg" />
               Resume

@@ -12,7 +12,7 @@ const Footer = () => {
     <footer className="dark:bg-gray-800 text-gary-200 py-10 sm:px-20">
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
         <nav>
-          <h6 className="text-lg font-semibold mb-4 text-green-500">Sarmin</h6>
+          <h6 className="text-2xl font-bold text-green-500 mb-4">Sarmin.</h6>
           <p className="dark:text-gray-200 max-w-xs">
             I am a passionate Frontend Developer focused on building responsive
             and user-friendly web applications. Dedicated to writing clean and
