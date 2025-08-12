@@ -68,7 +68,7 @@ const Hero = () => {
       <img
         src={photo}
         alt="Sarmin Akter"
-        className="max-w-sm rounded-lg shadow-2xl"
+        className="md:max-w-sm max-w-xs rounded-lg shadow-2xl"
       />
     </div>
 
