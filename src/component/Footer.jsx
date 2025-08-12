@@ -9,8 +9,8 @@ const Footer = () => {
   };
 
   return (
-    <footer className="dark:bg-gray-800 text-gary-200 py-10 w-11/12 mx-auto ">
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
+    <footer className="dark:bg-gray-800 text-gary-200 py-10  ">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 w-11/12 mx-auto">
         <nav>
           <h6 className="text-2xl font-bold text-green-500 mb-4">Sarmin.</h6>
           <p className="dark:text-gray-200 max-w-xs">
@@ -27,7 +27,7 @@ const Footer = () => {
             <li>
               <button
                 onClick={() => scrollToSection("home")}
-                className="hover:text-green-400 transition-colors"
+                className="hover:text-green-400 transition-colors cursor-pointer"
               >
                 Home
               </button>
@@ -35,7 +35,7 @@ const Footer = () => {
             <li>
               <button
                 onClick={() => scrollToSection("about")}
-                className="hover:text-green-400 transition-colors"
+                className="hover:text-green-400 transition-colors cursor-pointer"
               >
                 About
               </button>
@@ -43,7 +43,7 @@ const Footer = () => {
             <li>
               <button
                 onClick={() => scrollToSection("skills")}
-                className="hover:text-green-400 transition-colors"
+                className="hover:text-green-400 transition-colors cursor-pointer"
               >
                 Skills
               </button>
@@ -51,7 +51,7 @@ const Footer = () => {
             <li>
               <button
                 onClick={() => scrollToSection("projects")}
-                className="hover:text-green-400 transition-colors"
+                className="hover:text-green-400 transition-colors cursor-pointer"
               >
                 Projects
               </button>
@@ -59,19 +59,12 @@ const Footer = () => {
              <li>
               <button
                 onClick={() => scrollToSection("services")}
-                className="hover:text-green-400 transition-colors"
+                className="hover:text-green-400 transition-colors cursor-pointer"
               >
                 Services
               </button>
             </li>
-             <li>
-              <button
-                onClick={() => scrollToSection("testimonials")}
-                className="hover:text-green-400 transition-colors"
-              >
-                Testimonials
-              </button>
-            </li>
+          
           </ul>
         </nav>
 
