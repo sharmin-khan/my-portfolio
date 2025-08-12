@@ -7,7 +7,8 @@ const Contact = () => {
   
 
   return (
-    <section
+    <div className="pt-20">
+      <section
       id="contact"
       className="max-w-3xl mx-auto p-6 rounded-lg bg-white dark:bg-gray-800 shadow-md my-20"
     >
@@ -92,6 +93,7 @@ const Contact = () => {
         </button>
       </form>
     </section>
+    </div>
   );
 };
 

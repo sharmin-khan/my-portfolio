@@ -12,7 +12,7 @@ const projects = [
     name: "MarathonPro",
     image: project1Img,
     description: "A platform to manage and track marathons with live updates.",
-    tech: ["React", "Node.js", "MongoDB", "Express"],
+    tech: ["Tailwind CSS","React", "Node.js", "MongoDB", "Express"],
     githubClient: "https://github.com/sharmin-khan/marathon-management-clint",
     challenges:
       "Handling real-time updates and managing large datasets efficiently.",
@@ -23,7 +23,7 @@ const projects = [
     name: "PropEasy",
     image: project2Img,
     description: "Real estate marketplace to buy and sell properties easily.",
-    tech: ["React", "Firebase", "Tailwind CSS"],
+    tech: ["React", "Firebase","Node.js", "MongoDB", "Tailwind CSS"],
     githubClient: " https://github.com/sharmin-khan/real-estate-clint",
 
     challenges:
@@ -36,7 +36,7 @@ const projects = [
     image: project3Img,
     description:
       "Freelance task marketplace connecting clients and freelancers.",
-    tech: ["React", "Node.js", "MongoDB"],
+    tech: ["React","Firebase", "Node.js", "MongoDB"],
     githubClient: "https://github.com/sharmin-khan/freelance-task-client",
     challenges: "Managing real-time task status and user authentication.",
     improvements: "Add chat system and improve task recommendation engine.",
@@ -72,7 +72,7 @@ const ProjectDetails = () => {
         alt={project.name}
         className="w-full rounded-md mb-6 object-cover max-h-96"
       />
-      <p className="text-gray-700 mb-4">{project.description}</p>
+      <p className="text-gray-800 dark:text-gray-200 mb-4">{project.description}</p>
 
       <h3 className="text-2xl font-semibold mb-2">Technology Stack</h3>
       <div className="flex flex-wrap gap-2 mb-4">
