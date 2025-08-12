@@ -120,7 +120,7 @@ const Navbar = () => {
           {/* Resume button */}
           <div className="hidden lg:block">
             <a
-              href="/Resume.pdf"
+              href="/Resume-Sarmin.pdf"
               download
               target="_blank"
               rel="noopener noreferrer"

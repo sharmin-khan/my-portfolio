@@ -35,7 +35,7 @@ const Hero = () => {
           {/* Resume button (only for small devices) */}
           <div className="w-full max-w-xs lg:hidden">
             <a
-              href="/Resume.pdf"
+              href="/Resume-Sarmin.pdf"
               download
               target="_blank"
               rel="noopener noreferrer"
