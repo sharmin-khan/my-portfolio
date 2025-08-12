@@ -54,7 +54,7 @@ const Project = () => {
             <h3 className="text-lg text-green-600 font-semibold mb-2">
               {name}
             </h3>
-            <h4 className="text-md mb-4 text-gray-400"style={{ whiteSpace: "pre-line" }}>{description}</h4>
+            <h4 className="text-md mb-4 text-gray-800 dark:text-gray-300"style={{ whiteSpace: "pre-line" }}>{description}</h4>
             <p className="text-md mb-4">
               <span className="font-semibold text-green-600 mr-2">Tech:</span>
               {tech.map((item, index) => (

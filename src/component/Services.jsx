@@ -29,7 +29,7 @@ const services = [
 
 const Services = () => {
   return (
-    <section id="services" className="pt-20">
+    <section id="services" className="pt-20 ">
            <div className="flex items-center justify-center mb-3">
         <h2 className="text-3xl font-bold text-green-500 tracking-wide border-b-4 border-green-600 pb-2 max-w-max">
           Services
@@ -39,7 +39,7 @@ const Services = () => {
         I provide a variety of professional services to help you build, design, and grow your digital presence.
       </p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 h-72 ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 lg:h-72 ">
         {services.map(({ icon, title, description }) => (
           <div
             key={title}
