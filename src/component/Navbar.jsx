@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router";
+import { HashLink } from "react-router-hash-link";
 import ToggleTheme from "../toggle/ToggleTheme";
 import { HiOutlineDownload } from "react-icons/hi";
 import { FaHome, FaUser, FaCode, FaProjectDiagram, FaServicestack, FaEnvelope } from "react-icons/fa";
@@ -18,8 +19,10 @@ const NavItems = ({ activeSection, setIsOpen, isMobile = false }) => {
     <>
       {items.map(({ id, label, icon }) => (
         <li key={id}>
-          <a
-            href={`#${id}`}
+          <HashLink
+            smooth
+            to={`/#${id}`}
+            scroll={(el) => el.scrollIntoView({ behavior: "smooth", block: "start" })}
             onClick={() => setIsOpen(false)}
             className={`relative px-4 py-2 transition-transform duration-200 text-base font-medium bg-transparent
               ${
@@ -34,7 +37,7 @@ const NavItems = ({ activeSection, setIsOpen, isMobile = false }) => {
             style={{ textDecorationThickness: "2px" }}
           >
             {icon} {label}
-          </a>
+          </HashLink>
         </li>
       ))}
     </>

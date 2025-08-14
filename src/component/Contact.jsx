@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaEnvelope, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
+import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaPaperPlane } from "react-icons/fa";
 
 const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
@@ -35,7 +35,7 @@ const Contact = () => {
           {/* Email */}
           <div className="flex items-center gap-4 p-4 border border-gray-300 rounded-lg dark:border-gray-600 bg-white dark:bg-gray-700 shadow-sm cursor-pointer">
             <div className="p-4 border-2 border-green-500 rounded-full">
-              <FaEnvelope className="text-green-500 text-4xl" />
+              <FaEnvelope className="text-green-500 text-2xl lg:text-4xl" />
             </div>
             <div>
               <p className="font-semibold text-gray-800 dark:text-gray-200">
@@ -50,7 +50,7 @@ const Contact = () => {
           {/* Phone */}
           <div className="flex items-center gap-4 p-4 border border-gray-300 rounded-lg dark:border-gray-600 bg-white dark:bg-gray-700 shadow-sm cursor-pointer">
             <div className="p-4 border-2 border-green-500 rounded-full">
-              <FaPhone className="text-green-500 text-4xl" />
+              <FaPhone className="text-green-500 text-2xl lg:text-4xl" />
             </div>
             <div>
               <p className="font-semibold text-gray-800 dark:text-gray-200">
@@ -65,7 +65,7 @@ const Contact = () => {
           {/* Location */}
           <div className="flex items-center gap-4 p-4 border border-gray-300 rounded-lg dark:border-gray-600 bg-white dark:bg-gray-700 shadow-sm cursor-pointer">
             <div className="p-4 border-2 border-green-500 rounded-full">
-              <FaMapMarkerAlt className="text-green-500 text-4xl" />
+              <FaMapMarkerAlt className="text-green-500 text-2xl lg:text-4xl" />
             </div>
             <div>
               <p className="font-semibold text-gray-800 dark:text-gray-200">
@@ -150,8 +150,9 @@ const Contact = () => {
 
             <button
               type="submit"
-              className="w-full bg-green-500 text-white py-2 rounded font-semibold hover:bg-green-600 transition cursor-pointer"
+               className="w-full bg-green-500 text-white py-2 rounded font-semibold hover:bg-green-600 transition flex items-center justify-center gap-2 cursor-pointer"
             >
+              <FaPaperPlane className="text-white" />
               Send Message
             </button>
           </form>

@@ -10,9 +10,9 @@ import {
   FaServer,
   FaLaptopCode,
   FaHtml5,
-  FaCss3Alt,
-  FaBootstrap,
+  FaCss3Alt
 } from "react-icons/fa";
+import { SiTailwindcss } from "react-icons/si";
 
 const skillsData = {
   frontend: [
@@ -20,12 +20,11 @@ const skillsData = {
     { name: "CSS3", percentage: 90, icon: <FaCss3Alt className="text-blue-500" /> },
     { name: "JavaScript", percentage: 90, icon: <FaJs className="text-yellow-400" /> },
     { name: "React", percentage: 85, icon: <FaReact className="text-blue-400" /> },
-    { name: "Tailwind CSS", percentage: 80, icon: <FaLaptopCode className="text-teal-400" /> },
-   
+   { name: "Tailwind CSS", percentage: 80, icon: <SiTailwindcss className="text-teal-400" /> }
   ],
   backend: [
     { name: "Node.js", percentage: 65, icon: <FaNodeJs className="text-green-600" /> },
-    { name: "Express", percentage: 60, icon: <FaServer className="text-gray-400" /> },
+    { name: "Express.js", percentage: 60, icon: <FaServer className="text-green-400" /> },
     { name: "MongoDB", percentage: 70, icon: <FaDatabase className="text-green-700" /> },
   ],
   tools: [
