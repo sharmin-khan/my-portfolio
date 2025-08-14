@@ -3,16 +3,35 @@ import { Link } from "react-router";
 import { HashLink } from "react-router-hash-link";
 import ToggleTheme from "../toggle/ToggleTheme";
 import { HiOutlineDownload } from "react-icons/hi";
-import { FaHome, FaUser, FaCode, FaProjectDiagram, FaServicestack, FaEnvelope } from "react-icons/fa";
+import {
+  FaHome,
+  FaUser,
+  FaCode,
+  FaProjectDiagram,
+  FaServicestack,
+  FaEnvelope,
+} from "react-icons/fa";
 
 const NavItems = ({ activeSection, setIsOpen, isMobile = false }) => {
   const items = [
     { id: "home", label: "Home", icon: <FaHome className="inline" /> },
     { id: "about", label: "About", icon: <FaUser className="inline" /> },
     { id: "skills", label: "Skills", icon: <FaCode className="inline" /> },
-    { id: "projects", label: "Projects", icon: <FaProjectDiagram className="inline" /> },
-    { id: "services", label: "Services", icon: <FaServicestack className="inline" /> },
-    { id: "contact", label: "Contact", icon: <FaEnvelope className="inline" /> },
+    {
+      id: "projects",
+      label: "Projects",
+      icon: <FaProjectDiagram className="inline" />,
+    },
+    {
+      id: "services",
+      label: "Services",
+      icon: <FaServicestack className="inline" />,
+    },
+    {
+      id: "contact",
+      label: "Contact",
+      icon: <FaEnvelope className="inline" />,
+    },
   ];
 
   return (
@@ -22,7 +41,9 @@ const NavItems = ({ activeSection, setIsOpen, isMobile = false }) => {
           <HashLink
             smooth
             to={`/#${id}`}
-            scroll={(el) => el.scrollIntoView({ behavior: "smooth", block: "start" })}
+            scroll={(el) =>
+              el.scrollIntoView({ behavior: "smooth", block: "start" })
+            }
             onClick={() => setIsOpen(false)}
             className={`relative px-4 py-2 transition-transform duration-200 text-base font-medium bg-transparent
               ${
@@ -50,7 +71,14 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["home", "about", "skills", "projects", "services", "contact"];
+      const sections = [
+        "home",
+        "about",
+        "skills",
+        "projects",
+        "services",
+        "contact",
+      ];
       let current = "home";
       sections.forEach((id) => {
         const section = document.getElementById(id);
@@ -74,15 +102,26 @@ const Navbar = () => {
       <div className="navbar w-11/12 mx-auto relative px-0">
         {/* Left side */}
         <div className="navbar-start">
-          <Link to="/" className="text-2xl font-bold text-green-500">
+          <HashLink
+            smooth
+            to="/#home"
+            scroll={(el) =>
+              el.scrollIntoView({ behavior: "smooth", block: "start" })
+            }
+            className="text-2xl font-bold text-green-500"
+          >
             Sarmin.
-          </Link>
+          </HashLink>
         </div>
 
         {/* Middle part */}
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
-            <NavItems activeSection={activeSection} setIsOpen={setIsOpen} isMobile={false} />
+            <NavItems
+              activeSection={activeSection}
+              setIsOpen={setIsOpen}
+              isMobile={false}
+            />
           </ul>
         </div>
 
@@ -91,7 +130,11 @@ const Navbar = () => {
           <ToggleTheme />
 
           {/* Hamburger Button for mobile */}
-          <button onClick={() => setIsOpen(true)} className="btn btn-ghost lg:hidden" aria-label="Open menu">
+          <button
+            onClick={() => setIsOpen(true)}
+            className="btn btn-ghost lg:hidden"
+            aria-label="Open menu"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6 text-green-500"
@@ -128,7 +171,11 @@ const Navbar = () => {
           }`}
         >
           <div className="p-4 border-b border-gray-200 dark:border-gray-700 flex justify-between items-center">
-            <Link to="/" className="text-2xl font-bold text-green-500" onClick={() => setIsOpen(false)}>
+            <Link
+              to="/"
+              className="text-2xl font-bold text-green-500"
+              onClick={() => setIsOpen(false)}
+            >
               Sarmin
             </Link>
             <button
@@ -150,12 +197,21 @@ const Navbar = () => {
             </button>
           </div>
           <ul className="flex flex-col p-4 space-y-2 bg-green-500">
-            <NavItems activeSection={activeSection} setIsOpen={setIsOpen} isMobile={true} />
+            <NavItems
+              activeSection={activeSection}
+              setIsOpen={setIsOpen}
+              isMobile={true}
+            />
           </ul>
         </div>
 
         {/* Backdrop */}
-        {isOpen && <div onClick={() => setIsOpen(false)} className="fixed inset-0 bg-black bg-opacity-30" />}
+        {isOpen && (
+          <div
+            onClick={() => setIsOpen(false)}
+            className="fixed inset-0 bg-black bg-opacity-30"
+          />
+        )}
       </div>
     </div>
   );
