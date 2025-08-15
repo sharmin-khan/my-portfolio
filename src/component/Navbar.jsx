@@ -176,7 +176,7 @@ const Navbar = () => {
               className="text-2xl font-bold text-green-500"
               onClick={() => setIsOpen(false)}
             >
-              Sarmin
+              Sarmin.
             </Link>
             <button
               onClick={() => setIsOpen(false)}

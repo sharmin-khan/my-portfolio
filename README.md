@@ -17,7 +17,7 @@ This portfolio website showcases my projects, skills, and contact information. I
 - React Router 
 
 ## Live Link
-- https://mellow-duckanoo-07ebbe.netlify.app
+- https://sarmin-portfolio.netlify.app
 
 ## Contact
 - Email: sharminkhancse@gmail.com
