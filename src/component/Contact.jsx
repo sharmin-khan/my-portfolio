@@ -34,7 +34,7 @@ const Contact = () => {
           </p>
           {/* Email */}
           <div className="flex items-center gap-4 p-4 border border-gray-300 rounded-lg dark:border-gray-600 bg-white dark:bg-gray-700 shadow-sm cursor-pointer">
-            <div className="p-4 border-2 border-green-500 rounded-full">
+            <div className="p-2 lg:p-4 border-2 border-green-500 rounded-full">
               <FaEnvelope className="text-green-500 text-2xl lg:text-4xl" />
             </div>
             <div>
@@ -49,7 +49,7 @@ const Contact = () => {
 
           {/* Phone */}
           <div className="flex items-center gap-4 p-4 border border-gray-300 rounded-lg dark:border-gray-600 bg-white dark:bg-gray-700 shadow-sm cursor-pointer">
-            <div className="p-4 border-2 border-green-500 rounded-full">
+            <div className="p-2 lg:p-4 border-2 border-green-500 rounded-full">
               <FaPhone className="text-green-500 text-2xl lg:text-4xl" />
             </div>
             <div>
@@ -64,7 +64,7 @@ const Contact = () => {
 
           {/* Location */}
           <div className="flex items-center gap-4 p-4 border border-gray-300 rounded-lg dark:border-gray-600 bg-white dark:bg-gray-700 shadow-sm cursor-pointer">
-            <div className="p-4 border-2 border-green-500 rounded-full">
+            <div className="p-2 lg:p-4 border-2 border-green-500 rounded-full">
               <FaMapMarkerAlt className="text-green-500 text-2xl lg:text-4xl" />
             </div>
             <div>
